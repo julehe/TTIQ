@@ -70,7 +70,6 @@ def phibar(trcov, sigma_U, sigma_Q, p_I, p_Q, tau, timing):
     lower = 0
     middle = lower+(upper-lower)/2
     while True:
-        print(middle)
         steps = 32
         duration_temp = 56
         phi = middle
@@ -115,33 +114,27 @@ phibar_p_Q_early = []
 phibar_tau_early = []
 
 for i in trcov_vec:
-    print('cov_e')
     phibar_trcov_early.append(phibar(i, sigma_U_b, sigma_Q_b, p_I_b, p_Q_b,\
                                      tau_b, 'early'))
    
 
 for i in sigma_U_vec:
-    print('testiU_e')
     phibar_sigma_U_early.append(phibar(trcov_b, i, sigma_Q_b, p_I_b, p_Q_b,\
                                        tau_b,'early'))
 
 for i in sigma_Q_vec:
-    print('testiQ_e')
     phibar_sigma_Q_early.append(phibar(trcov_b, sigma_U_b, i, p_I_b, p_Q_b,\
                                        tau_b,'early'))
     
 for i in p_I_vec:
-    print('complI_e')
     phibar_p_I_early.append(phibar(trcov_b, sigma_U_b, sigma_Q_b, i, p_Q_b,\
                                    tau_b,'early'))
   
 for i in p_Q_vec:
-    print('complQ_e')
     phibar_p_Q_early.append(phibar(trcov_b, sigma_U_b, sigma_Q_b, p_I_b, i,\
                                    tau_b,'early'))
 
 for i in tau_vec:
-    print('delay_e')
     phibar_tau_early.append(phibar(trcov_b, sigma_U_b, sigma_Q_b, p_I_b, p_Q_b,\
                                    i,'early'))
 
@@ -158,33 +151,27 @@ phibar_p_Q_late = []
 phibar_tau_late = []
 
 for i in trcov_vec:
-    print('cov_l')
     phibar_trcov_late.append(phibar(i, sigma_U_b, sigma_Q_b, p_I_b, p_Q_b,\
                                     tau_b, 'late'))
     
 
 for i in sigma_U_vec:
-    print('testiU_l')
     phibar_sigma_U_late.append(phibar(trcov_b, i, sigma_Q_b, p_I_b, p_Q_b,\
                                       tau_b,'late'))
 
 for i in sigma_Q_vec:
-    print('testiQ_l')
     phibar_sigma_Q_late.append(phibar(trcov_b, sigma_U_b, i, p_I_b, p_Q_b,\
                                       tau_b,'late'))
     
 for i in p_I_vec:
-    print('complI_l')
     phibar_p_I_late.append(phibar(trcov_b, sigma_U_b, sigma_Q_b, i, p_Q_b,\
                                   tau_b,'late'))
 
 for i in p_Q_vec:
-    print('complQ_l')
     phibar_p_Q_late.append(phibar(trcov_b, sigma_U_b, sigma_Q_b, p_I_b, i,\
                                   tau_b,'late'))
   
 for i in tau_vec:
-    print('delay_l')
     phibar_tau_late.append(phibar(trcov_b, sigma_U_b, sigma_Q_b, p_I_b, p_Q_b,\
                                   i,'late'))
    
