@@ -116,14 +116,15 @@ def model(steps, duration, IC, history, para_cap, para, para_hist, para_interv,\
         sigma_U = sigma_U_t(t)
         sigma_Ut = sigma_U_t(t-tau)
         sigma_Q = sigma_Q_t(t)
+        sigma_Qt = sigma_Q_t(t-tau)
         trcov = trcov_t(t) 
         p_Q = p_Q_t(t)
         p_I = p_I_t(t)
         # calculate current and past testing terms accounting for system's state
         Nenner = sigma_minus + S + E + sigma_Q*QE + U1 + sigma_Q*QU1 + I1\
                             + sigma_U*U2 + sigma_Q*QU2 + I2 + R
-        Nennert = sigma_minus + St + Et + sigma_Q*QEt + U1t + sigma_Q*QU1t + I1t\
-                            + sigma_Ut*U2t + sigma_Q*QU2t + I2t + Rt
+        Nennert = sigma_minus + St + Et + sigma_Qt*QEt + U1t + sigma_Qt*QU1t + I1t\
+                            + sigma_Ut*U2t + sigma_Qt*QU2t + I2t + Rt
         # correction factor for testing rates (accounting for limited capacity)           
         cor = sigma_plus/Nenner
         cort = sigma_plus/Nennert
@@ -250,7 +251,7 @@ def model(steps, duration, IC, history, para_cap, para, para_hist, para_interv,\
     # In the script Fig12_model_sim, where tau=2, we plot the tracing effciency, 
     # test positive rate, and detection ratio. 
     # The code in the following if-block reconstructs the corresponding time 
-    # sereies. Currently, this only works for integer tracing delays tau. 
+    # series. Currently, this only works for integer tracing delays tau. 
     # Since other scripts consider scenarios with non-integer tau, we condition
     # this part to the boolean Fig12. One could use interpolation of the solution v
     # to make it run for non-integer tau at the cost of increased computation time.
