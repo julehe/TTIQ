@@ -1,6 +1,8 @@
-# Figure 5: Comparison of phistar in scenario without any TTIQ (no TTIQ) vs.
-# only testing (only testing) vs. testing and tracing (full TTIQ).  
-# + The same with improved testing.
+"""
+Figure 5: Comparison of phistar in scenario without any TTIQ (no TTIQ) vs.
+only testing (only testing) vs. testing and tracing (full TTIQ).  
++ The same with improved testing.
+"""
 
 import matplotlib.pyplot as plt
 import string
@@ -20,7 +22,7 @@ cov_b = 0.65 # tracing coverage
 sigma_U_b = 93 # rel. freq. of testing in U2
 sigma_Q_b = 300 # rel. freq. of testing in Q
 p_I_b = 0.1 # strictness of isolation in I
-p_Q_b = 0.2 # strictness of isolation in Q
+p_Q_b = 0.2 # strictness of quarantine in Q
 tau_b = 2 # tracing delay
 theta_b = 1.5 # scaling factor of presymptomatic transmission rate
 lat_b = 3.5 # average duraiton of latency period
