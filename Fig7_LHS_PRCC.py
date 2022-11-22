@@ -1,6 +1,8 @@
-# Figure 8: global sensitivity of phistar to changes in TTIQ parameters using
-# latin hypercube samping (LHS) and partial rank correlation coefficients 
-# (PRCCs).
+"""
+Figure 8: global sensitivity of $\phi^*$ to changes in TTIQ parameters using
+latin hypercube samping (LHS) and partial rank correlation coefficients 
+(PRCCs).
+"""
 
 import numpy as np
 from phistar import phistar
@@ -28,7 +30,7 @@ cov_b = 0.65 # tracing coverage
 sigma_U_b = 93 # rel. freq. of testing in U2
 sigma_Q_b = 300 # rel. freq. of testing in Q
 p_I_b = 0.1 # strictness of isolation in I
-p_Q_b = 0.2 # strictness of isolation in Q
+p_Q_b = 0.2 # strictness of quarantine in Q
 tau_b = 2 # tracing delay
 theta_b = 1.5 # scaling factor of presymptomatic transmission rate
 lat_b = 3.5 # average duraiton of latency period
