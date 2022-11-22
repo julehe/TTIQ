@@ -1,5 +1,5 @@
 """
-Figure 4: Comparison of phistar in scenario without any TTIQ (no TTIQ) vs.
+Figure 4: Comparison of $\phi^*$ in scenario without any TTIQ (no TTIQ) vs.
 only testing (only testing) vs. testing and tracing (full TTIQ).  
 + The same with improved testing.
 """
