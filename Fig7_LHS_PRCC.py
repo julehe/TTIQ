@@ -1,5 +1,5 @@
 """
-Figure 8: global sensitivity of $\phi^*$ to changes in TTIQ parameters using
+Figure 7: global sensitivity of $\phi^*$ to changes in TTIQ parameters using
 latin hypercube samping (LHS) and partial rank correlation coefficients 
 (PRCCs).
 """
