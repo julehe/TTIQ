@@ -100,8 +100,8 @@ ax2.text(-0.1, 1.15, string.ascii_uppercase[1], transform=ax2.transAxes,
         size=20, weight='bold')
 fig.align_ylabels()
 
-#plt.savefig('Figure5.eps', format='eps', dpi=600)
-#plt.savefig('Figure5.pdf', format='pdf', dpi=600)
+#plt.savefig('Figure4.eps', format='eps', dpi=600)
+#plt.savefig('Figure4.pdf', format='pdf', dpi=600)
 
 
 
