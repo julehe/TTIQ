@@ -1,7 +1,9 @@
-# Returns a Chebyshev differentiation matrix.
-# The code was translated to Python based on the MATLAB script "cheb.m" given
-# in the book "Spectral Methods in MATLAB (2000)" by Trefethen. The MATLAB code
-# is publicly available on the book's homepage.
+"""
+Returns a Chebyshev differentiation matrix.
+The code was translated to Python based on the MATLAB script "cheb.m" given
+in the book "Spectral Methods in MATLAB (2000)" by Trefethen. The MATLAB code
+is publicly available on the book's homepage.
+"""
 
 import numpy as np
 
