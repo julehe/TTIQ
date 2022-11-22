@@ -1,5 +1,5 @@
 """
-Figure 6 & 7: phistar varying TTIQ parameters.
+Figure 5 & 6: $\phi^*$ varying TTIQ parameters.
 """
 
 import numpy as np
