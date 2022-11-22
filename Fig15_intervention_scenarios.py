@@ -1,4 +1,6 @@
-# Figure 15: simulation of the DDE model with different interventions
+"""
+Figure 14: simulation of the DDE model with different interventions
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -155,6 +157,6 @@ ax2.text(-0.1, 1.15, string.ascii_uppercase[1], transform=ax2.transAxes,
         size=20, weight='bold')
 fig.align_ylabels()
 
-#fig.savefig('Figure15.eps', format='eps', dpi=600)
-#fig.savefig('Figure15.pdf', format='pdf', dpi=600)
+#fig.savefig('Figure14.eps', format='eps', dpi=600)
+#fig.savefig('Figure14.pdf', format='pdf', dpi=600)
 
