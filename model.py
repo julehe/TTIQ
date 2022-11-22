@@ -1,34 +1,36 @@
-# This function simulates the DDE model.
-# Vector IC: should contain the initial conditions for:
-# S, E, QE, U1, QU1, I1, U2, QU2, I2, R, Icum 
-# The last compartment is a dumy to count cumulative nbr. of positively 
-# tested individuals.
-#
-# Function history: history function to initialize the DDE
-#
-# Scalar t_interv: possible change point for parameter values
-#
-# Vector para_cap: should contain values for TTIQ capacity paramaters in the
-# folowing order:
-# sigma_plus, p, Omega
-#
-# Vector para: should contain parameters of the model in the 
-# following order (values for 0<=t<t_interv):
-# phi, tracing coverage, rel. freq. of test. in U2, rel. freq. of test. in Q,
-# strict. of isolation, strict. of quarantine, tracing delay.
-#
-# para_hist: same as para but values for t<0.
-#
-# para_interv: same as para but for t>=t_interv
-#
-# Boolean Fig12: should only be set to 1 if tracing delay is an integer. Gives 
-# additional outputs (explained below).
+"""
+This function simulates the DDE model.
+Vector IC: should contain the initial conditions for:
+S, E, QE, U1, QU1, I1, U2, QU2, I2, R, Icum 
+The last compartment is a dumy to count cumulative nbr. of positively 
+tested individuals.
+
+Function history: history function to initialize the DDE
+
+Scalar t_interv: possible change point for parameter values
+
+Vector para_cap: should contain values for TTIQ capacity paramaters in the
+folowing order:
+sigma_plus, p, Omega
+
+Vector para: should contain parameters of the model in the 
+following order (values for 0<=t<t_interv):
+phi, tracing coverage, rel. freq. of test. in U2, rel. freq. of test. in Q,
+strict. of isolation, strict. of quarantine, tracing delay.
+
+para_hist: same as para but values for t<0.
+
+para_interv: same as para but for t>=t_interv
+
+Boolean Fig11: should only be set to 1 if tracing delay is an integer. Gives 
+additional outputs (explained below).
+"""
 
 import numpy as np
 from ddeint import ddeint
 
 def model(steps, duration, IC, history, para_cap, para, para_hist, para_interv,\
-          t_interv, Fig12):
+          t_interv, Fig11):
     T = np.linspace(0,duration,steps*duration+1)
     Ntot = np.sum(IC) 
     # baseline parameter values
