@@ -1,4 +1,6 @@
-# Figure 6 & 7: phistar varying TTIQ parameters.
+"""
+Figure 6 & 7: phistar varying TTIQ parameters.
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
