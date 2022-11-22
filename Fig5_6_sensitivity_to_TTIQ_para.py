@@ -240,8 +240,8 @@ ax7.text(-0.1, 1.15, string.ascii_uppercase[5], transform=ax7.transAxes,
 
 
 
-#plt.savefig('Figure6.eps', format='eps', dpi=600)
-#plt.savefig('Figure6.pdf', format='pdf', dpi=600)
+#plt.savefig('Figure5.eps', format='eps', dpi=600)
+#plt.savefig('Figure5.pdf', format='pdf', dpi=600)
 
 fig2 = plt.figure(figsize=(16.5, 4.7),constrained_layout=True)
 grid = fig2.add_gridspec(ncols=3, nrows=1, wspace=0.1)
@@ -298,8 +298,8 @@ cbar11.ax.tick_params(labelsize=12)
 ax11.text(-0.1, 1.15, string.ascii_uppercase[2], transform=ax11.transAxes, 
           size=20, weight='bold') 
 
-#plt.savefig('Figure7.eps', format='eps', dpi=600)
-#plt.savefig('Figure7.pdf', format='pdf', dpi=600)
+#plt.savefig('Figure6.eps', format='eps', dpi=600)
+#plt.savefig('Figure6.pdf', format='pdf', dpi=600)
 
 
 
