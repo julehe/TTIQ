@@ -126,8 +126,8 @@ ax21.set_ylim(-1,1)
 ax21.set_xlabel('TTIQ parameters', fontsize=14)
 ax21.set_ylabel('PRCC for $\\phi^*$', fontsize=14)  
 
-#plt.savefig('Figure8.eps', format='eps', dpi=600)
-#plt.savefig('Figure8.pdf', format='pdf', dpi=600)
+#plt.savefig('Figure7.eps', format='eps', dpi=600)
+#plt.savefig('Figure7.pdf', format='pdf', dpi=600)
 
 # print("PRCC: tracing coverage")
 # print(pear_cov)
