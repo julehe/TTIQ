@@ -1,5 +1,7 @@
-# Figure12: Plots showing outcome of simulation of the DDE model in baseline 
-# setting
+""" 
+Figure11: Plots showing outcome of simulation of the DDE model in baseline 
+setting
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -138,5 +140,5 @@ ax42.set_yticks([])
 fig.align_ylabels()
 plt.show()
 
-#fig.savefig('Figure12.eps', format='eps', dpi=600)
-#fig.savefig('Figure12.pdf', format='pdf', dpi=600)
+#fig.savefig('Figure11.eps', format='eps', dpi=600)
+#fig.savefig('Figure11.pdf', format='pdf', dpi=600)
