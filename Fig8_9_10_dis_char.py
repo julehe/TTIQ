@@ -1,4 +1,6 @@
-# Figure 9 & 10 & 11: phistar varying disease characteristics
+"""
+Figure 8-10: $\phi^*$ varying disease characteristics
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -182,8 +184,8 @@ ax1.clabel(CS1, inline=1, fontsize=12)
 cbar1 = fig1.colorbar(pl1, ax=ax1)
 cbar1.ax.tick_params(labelsize=14)
 
-#plt.savefig('Figure9.pdf', format='pdf', dpi=600)
-#plt.savefig('Figure9.eps', format='eps', dpi=600)
+#plt.savefig('Figure8.pdf', format='pdf', dpi=600)
+#plt.savefig('Figure8.eps', format='eps', dpi=600)
 
 fig2 = plt.figure(figsize=(14, 8),constrained_layout=True)
 grid = fig2.add_gridspec(ncols=3, nrows=2, wspace=0.1)
@@ -264,8 +266,8 @@ ax6.annotate(str(round(phistar_5_11[2],3)), xy=(names[2],phistar_5_11[2]),\
 ax6.text(-0.1, 1.15, string.ascii_uppercase[4], transform=ax6.transAxes,
         size=20, weight='bold')
 
-#plt.savefig('Figure10.pdf', format='pdf', dpi=600)
-#plt.savefig('Figure10.eps', format='eps', dpi=600)
+#plt.savefig('Figure9.pdf', format='pdf', dpi=600)
+#plt.savefig('Figure9.eps', format='eps', dpi=600)
 
 fig3 = plt.figure(figsize=(9.9, 3.96),constrained_layout=True)
 grid = fig3.add_gridspec(ncols=2, nrows=1, wspace=0.1)
@@ -305,5 +307,5 @@ cbar9.ax.tick_params(labelsize=14)
 ax9.text(-0.1, 1.15, string.ascii_uppercase[1], transform=ax9.transAxes,
         size=20, weight='bold')
 
-#plt.savefig('Figure11.pdf', format='pdf', dpi=600)
-#plt.savefig('Figure11.eps', format='eps', dpi=600)
+#plt.savefig('Figure10.pdf', format='pdf', dpi=600)
+#plt.savefig('Figure10.eps', format='eps', dpi=600)
