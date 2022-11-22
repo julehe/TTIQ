@@ -1,5 +1,7 @@
-# Figure 13: phibar along simulation of DDE model in baseline setting but
-# for different TTIQ capacity paramaters.
+"""
+Figure 12: $\bar\phi$ along simulation of DDE model in baseline setting but
+for different TTIQ capacity paramaters.
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -457,5 +459,5 @@ ax7.legend([r'$\sigma_+=150K$',r'$\sigma_+=200K$',r'$\sigma_+=250K$'],\
 ax7.text(-0.1, 1.15, string.ascii_uppercase[2], transform=ax7.transAxes, 
         size=20, weight='bold')
 
-#plt.savefig('Figure13.pdf', format='pdf', dpi=600)
-#plt.savefig('Figure13.eps', format='eps', dpi=600)
+#plt.savefig('Figure12.pdf', format='pdf', dpi=600)
+#plt.savefig('Figure12.eps', format='eps', dpi=600)
