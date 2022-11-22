@@ -1,5 +1,7 @@
-# Figure 14: phibar at an early and a late intervention time point + varying
-# individual TTIQ parameters  
+"""
+Figure 13: $\bar\phi$ at an early and a late intervention time point + varying
+individual TTIQ parameters  
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -258,8 +260,8 @@ ax6.legend(['early intervention','late intervention'],prop=dict(size=10.5,\
                                                                 weight='bold'))
 ax6.text(-0.1, 1.15, string.ascii_uppercase[5], transform=ax6.transAxes, 
         size=20, weight='bold')
-#plt.savefig('Figure14.eps',format='eps',dpi=600)
-#plt.savefig('Figure14.pdf',format='pdf',dpi=600)
+#plt.savefig('Figure13.eps',format='eps',dpi=600)
+#plt.savefig('Figure13.pdf',format='pdf',dpi=600)
 
 
 
