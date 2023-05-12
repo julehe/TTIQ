@@ -152,9 +152,11 @@ def model(steps, duration, IC, history, para_cap, para, para_hist, para_interv,\
             raise Warning("The parameter input to model.py resulted in ptilde1>1!")
         if ptilde2 > 1:
             raise Warning("The parameter input to model.py resulted in ptilde2>1!")
-        # resulting tracing terms              
-        c_pot_U1 = J * ctildet * Testt1
-        c_pot_U2 = J * ctildet * Testt2
+        # resulting tracing terms
+        N_F = St + Et + p_Q*QEt + U1t + p_Q*QU1t + p_I*I1t + U2t + p_Q*QU2t \
+            + p_I*I2t + Rt 
+        c_pot_U1 = J * ctildet * Testt1 * (N_F/Ntot)
+        c_pot_U2 = J * ctildet * Testt2 * (N_F/Ntot)
         c_pot = c_pot_U1 + c_pot_U2
         c_act_U1 = c_pot_U1 * Omega/(Omega**p + c_pot**p)**(1/p)
         c_act_U2 = c_pot_U2 * Omega/(Omega**p + c_pot**p)**(1/p)
