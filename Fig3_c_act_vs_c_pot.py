@@ -1,6 +1,7 @@
-# Figure3: Illustration of c_act as function of c_pot assuming different values 
-# for the tracing efficiency constant p
-
+"""
+Figure3: Illustration of c_act as function of c_pot assuming different values 
+for the tracing efficiency constant p
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
